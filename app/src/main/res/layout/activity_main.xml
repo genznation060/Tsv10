@@ -81,6 +81,9 @@
                     <!-- Multiline TSV Input -->
                     <EditText
                         android:id="@+id/etTsvInput"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#94A3B8"
+        android:background="#1E293B"
                         android:layout_width="match_parent"
                         android:layout_height="140dp"
                         android:gravity="top|start"
