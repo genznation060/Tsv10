@@ -35,12 +35,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Ensure TSV input text is visible regardless of theme
-        findViewById<android.widget.EditText>(R.id.etTsvInput)?.apply {
-            setTextColor(android.graphics.Color.WHITE)
-            setHintTextColor(android.graphics.Color.parseColor("#94A3B8"))
-        }
-
         repository = CategoryRepository(this)
 
         setupRecyclerView()
@@ -422,9 +416,4 @@ class MainActivity : AppCompatActivity() {
             val btnDelete: ImageButton = itemView.findViewById(R.id.btnDeleteValue)
         }
     }
-        } catch (t: Throwable) {
-            android.util.Log.w("TSVKeyboard/App", "color fix failed", t)
-        }
-    }
-
 }

@@ -74,7 +74,7 @@ class TsvKeyboardService : InputMethodService() {
             loadDataAndSetupUI()
 
             view
-    } catch (e: Exception) {
+        } catch (e: Exception) {
             Log.e(TAG, "Fatal fallback prevented crash in onCreateInputView", e)
             // Emergency fallback view so the system never crashes
             val fallback = View(this)
@@ -458,12 +458,4 @@ class TsvKeyboardService : InputMethodService() {
             val btnInsert: TextView = itemView.findViewById(R.id.btnInsertValue)
         }
     }
-                    }
-                }
-            }
-        } catch (t: Throwable) {
-            android.util.Log.w("TSVKeyboard/IME", "color fix failed", t)
-        }
-    }
-
 }
