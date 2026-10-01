@@ -80,22 +80,19 @@
 
                     <!-- Multiline TSV Input -->
                     <EditText
-                        android:id="@+id/etTsvInput"
+        android:id="@+id/etTsvInput"
         android:textColor="#FFFFFF"
         android:textColorHint="#94A3B8"
         android:background="#1E293B"
-                        android:layout_width="match_parent"
-                        android:layout_height="140dp"
-                        android:gravity="top|start"
-                        android:background="@drawable/bg_search_input"
-                        android:hint="@string/hint_paste_tsv"
-                        android:textColor="@color/text_primary"
-                        android:textColorHint="@color/text_muted"
-                        android:textSize="13sp"
-                        android:inputType="textMultiLine"
-                        android:scrollbars="vertical"
-                        android:padding="12dp"
-                        android:layout_marginBottom="12dp" />
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:gravity="top|start"
+        android:hint="@string/hint_paste_tsv"
+        android:textSize="13sp"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp">
 
                     <!-- Action Buttons -->
                     <LinearLayout

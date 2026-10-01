@@ -35,6 +35,12 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Ensure TSV input text is visible regardless of theme
+        findViewById<android.widget.EditText>(R.id.etTsvInput)?.apply {
+            setTextColor(android.graphics.Color.WHITE)
+            setHintTextColor(android.graphics.Color.parseColor("#94A3B8"))
+        }
+
         repository = CategoryRepository(this)
 
         setupRecyclerView()
