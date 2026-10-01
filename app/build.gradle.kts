@@ -18,19 +18,8 @@ android {
   }
 
   signingConfigs {
-    create("release") {
-      val keystorePath = System.getenv("KEYSTORE_PATH") ?: "${rootDir}/my-upload-key.jks"
-      storeFile = file(keystorePath)
-      storePassword = System.getenv("STORE_PASSWORD")
-      keyAlias = "upload"
-      keyPassword = System.getenv("KEY_PASSWORD")
-    }
-    create("debugConfig") {
-      storeFile = file("${rootDir}/debug.keystore")
-      storePassword = "android"
-      keyAlias = "androiddebugkey"
-      keyPassword = "android"
-    }
+    // release signing config removed (CI builds debug only)
+    // debugConfig removed — Android uses built-in debug signing
   }
 
   buildTypes {
@@ -38,11 +27,11 @@ android {
       isCrunchPngs = false
       isMinifyEnabled = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-      signingConfig = signingConfigs.getByName("release")
+      // no release signing config
     }
     debug {
             val custom = file("${rootDir}/debug.keystore")
-            if (custom.exists()) { signingConfig = signingConfigs.getByName("debugConfig") }
+            if (custom.exists()) { // using Android's built-in debug signing (no keystore file needed) }
         }
   }
   compileOptions {
