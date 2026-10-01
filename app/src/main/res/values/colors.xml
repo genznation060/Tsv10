@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand colors -->
+    <color name="primary">#2563EB</color>
+    <color name="primary_dark">#1D4ED8</color>
+    <color name="primary_light">#DBEAFE</color>
+    <color name="accent">#38BDF8</color>
+
+    <!-- UI Backgrounds and Surfaces -->
+    <color name="bg_light">#F8FAFC</color>
+    <color name="surface_light">#FFFFFF</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="border_color">#E2E8F0</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="text_muted">#94A3B8</color>
+
+    <!-- Actions & Badges -->
+    <color name="success">#059669</color>
+    <color name="success_light">#D1FAE5</color>
+    <color name="danger">#DC2626</color>
+    <color name="danger_light">#FEE2E2</color>
+
+    <!-- Keyboard Specific Colors -->
+    <color name="kb_bg">#0F172A</color>
+    <color name="kb_bar_bg">#1E293B</color>
+    <color name="kb_key_normal">#334155</color>
+    <color name="kb_key_pressed">#475569</color>
+    <color name="kb_key_active">#2563EB</color>
+    <color name="kb_action_key">#1E3A8A</color>
+    <color name="kb_text_white">#F8FAFC</color>
+    <color name="kb_text_dim">#94A3B8</color>
+    <color name="kb_divider">#334155</color>
+</resources>

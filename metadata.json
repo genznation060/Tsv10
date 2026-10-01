@@ -1,0 +1,6 @@
+{
+  "name": "TSV Category Keyboard",
+  "description": "Import TSV spreadsheets to create column categories and insert values via an Android system keyboard.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

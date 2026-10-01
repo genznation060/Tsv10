@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TSV Category Keyboard</string>
+    <string name="ime_name">TSV Category Keyboard</string>
+
+    <string name="title_tsv_manager">TSV Category Manager</string>
+    <string name="subtitle_tsv_manager">Paste TSV spreadsheet data to generate keyboard categories</string>
+
+    <string name="hint_paste_tsv">Paste TSV here (first line will be used as column headers)…</string>
+    <string name="btn_import_tsv">IMPORT TSV</string>
+    <string name="btn_clear">CLEAR</string>
+    <string name="btn_load_sample">LOAD SAMPLE TSV</string>
+    <string name="btn_add_category">NEW CATEGORY</string>
+
+    <string name="title_categories">Categories</string>
+    <string name="empty_categories_hint">No categories imported yet.\nPaste TSV data above or tap "Load Sample TSV" to test immediately.</string>
+    <string name="empty_values_hint">No values in this category yet. Tap "+ Add Value" to insert one.</string>
+
+    <string name="btn_open_keyboard_settings">OPEN KEYBOARD SETTINGS</string>
+    <string name="btn_switch_keyboard">SWITCH INPUT METHOD</string>
+
+    <string name="dialog_create_category">Create Category</string>
+    <string name="dialog_rename_category">Rename Category</string>
+    <string name="dialog_delete_category">Delete Category</string>
+    <string name="dialog_add_value">Add Value</string>
+    <string name="dialog_confirm_clear">Clear All Categories?</string>
+    <string name="dialog_confirm_clear_msg">This will remove all saved categories and their values.</string>
+
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_delete">Delete</string>
+
+    <!-- Keyboard Strings -->
+    <string name="kb_header_title">TSV CATEGORY KEYBOARD</string>
+    <string name="kb_hint_search">Search in category…</string>
+    <string name="kb_btn_insert_all">INSERT ALL</string>
+    <string name="kb_btn_backspace">⌫ BACK</string>
+    <string name="kb_btn_space">SPACE</string>
+    <string name="kb_btn_enter">ENTER ↵</string>
+    <string name="kb_btn_tab">TAB ⇥</string>
+    <string name="kb_btn_switch_ime">🌐 SWITCH</string>
+    <string name="kb_no_data">No categories found. Open the app to import TSV data.</string>
+    <string name="kb_no_values_in_cat">No values found in this category.</string>
+    <string name="kb_open_app">OPEN APP</string>
+
+    <!-- Privacy & Guidance -->
+    <string name="privacy_title">Security &amp; Privacy Notice</string>
+    <string name="privacy_body">100% Offline &amp; Safe: This app has NO Internet permission. Your TSV data is stored strictly on your local device. The keyboard never logs keystrokes, never intercepts what you type in other apps, and only inserts text when you tap a category value.</string>
+
+    <!-- How to use -->
+    <string name="setup_title">How to Enable System Keyboard</string>
+    <string name="setup_step1">1. Tap "Open Keyboard Settings" below and enable "TSV Category Keyboard".</string>
+    <string name="setup_step2">2. In any app (Chrome, Notes, WhatsApp), tap a text field.</string>
+    <string name="setup_step3">3. Switch keyboard to "TSV Category Keyboard" using the keyboard picker icon.</string>
+</resources>

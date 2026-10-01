@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Keyboard Body -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,30 h48 c4.4,0 8,3.6 8,8 v32 c0,4.4 -3.6,8 -8,8 h-48 c-4.4,0 -8,-3.6 -8,-8 v-32 c0,-4.4 3.6,-8 8,-8 z" />
+    
+    <!-- Header/Category Row - 3 keys (tinted) -->
+    <path
+        android:fillColor="#3B82F6"
+        android:pathData="M28,36 h14 c1.1,0 2,0.9 2,2 v7 c0,1.1 -0.9,2 -2,2 h-14 c-1.1,0 -2,-0.9 -2,-2 v-7 c0,-1.1 0.9,-2 2,-2 z
+                          M47,36 h14 c1.1,0 2,0.9 2,2 v7 c0,1.1 -0.9,2 -2,2 h-14 c-1.1,0 -2,-0.9 -2,-2 v-7 c0,-1.1 0.9,-2 2,-2 z
+                          M66,36 h14 c1.1,0 2,0.9 2,2 v7 c0,1.1 -0.9,2 -2,2 h-14 c-1.1,0 -2,-0.9 -2,-2 v-7 c0,-1.1 0.9,-2 2,-2 z" />
+
+    <!-- Grid / Value Cells Row -->
+    <path
+        android:fillColor="#64748B"
+        android:pathData="M28,50 h10 c1.1,0 2,0.9 2,2 v6 c0,1.1 -0.9,2 -2,2 h-10 c-1.1,0 -2,-0.9 -2,-2 v-6 c0,-1.1 0.9,-2 2,-2 z
+                          M42,50 h10 c1.1,0 2,0.9 2,2 v6 c0,1.1 -0.9,2 -2,2 h-10 c-1.1,0 -2,-0.9 -2,-2 v-6 c0,-1.1 0.9,-2 2,-2 z
+                          M56,50 h10 c1.1,0 2,0.9 2,2 v6 c0,1.1 -0.9,2 -2,2 h-10 c-1.1,0 -2,-0.9 -2,-2 v-6 c0,-1.1 0.9,-2 2,-2 z
+                          M70,50 h10 c1.1,0 2,0.9 2,2 v6 c0,1.1 -0.9,2 -2,2 h-10 c-1.1,0 -2,-0.9 -2,-2 v-6 c0,-1.1 0.9,-2 2,-2 z" />
+
+    <!-- Space & Action Row -->
+    <path
+        android:fillColor="#1E293B"
+        android:pathData="M28,63 h8 c1.1,0 2,0.9 2,2 v5 c0,1.1 -0.9,2 -2,2 h-8 c-1.1,0 -2,-0.9 -2,-2 v-5 c0,-1.1 0.9,-2 2,-2 z
+                          M40,63 h28 c1.1,0 2,0.9 2,2 v5 c0,1.1 -0.9,2 -2,2 h-28 c-1.1,0 -2,-0.9 -2,-2 v-5 c0,-1.1 0.9,-2 2,-2 z
+                          M72,63 h8 c1.1,0 2,0.9 2,2 v5 c0,1.1 -0.9,2 -2,2 h-8 c-1.1,0 -2,-0.9 -2,-2 v-5 c0,-1.1 0.9,-2 2,-2 z" />
+</vector>
