@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: 'temurin'
           java-version: '17'
@@ -29,16 +29,11 @@ jobs:
         with:
           validate-wrappers: false
 
-      - name: Restore debug keystore (if encoded)
-        run: |
-          if [ -f "debug.keystore.base64" ] && [ ! -f "debug.keystore" ]; then
-            base64 -d debug.keystore.base64 > debug.keystore || true
-          fi
+      - name: Show Gradle version
+        run: ./gradlew --version
 
       - name: Ensure gradlew executable
-        run: |
-          chmod +x gradlew
-          sed -i 's/\r$//' gradlew || true
+        run: chmod +x gradlew
 
       - name: Build Debug APK
         run: ./gradlew assembleDebug --stacktrace --no-daemon
