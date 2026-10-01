@@ -18,8 +18,15 @@ android {
   }
 
   signingConfigs {
-    // release signing config removed (CI builds debug only)
-    // debugConfig removed — Android uses built-in debug signing
+    // release signing config removed for CI (debug build only)
+    create("debugConfig") {
+            // Points at Android SDK's auto-generated debug keystore.
+            // Works both locally and on CI — never requires a repo file.
+            storeFile = file(System.getProperty("user.home") + "/.android/debug.keystore")
+            storePassword = "android"
+            keyAlias = "androiddebugkey"
+            keyPassword = "android"
+        }
   }
 
   buildTypes {
@@ -27,11 +34,11 @@ android {
       isCrunchPngs = false
       isMinifyEnabled = false
       proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
-      // no release signing config
+      // no release signing on CI
     }
     debug {
             val custom = file("${rootDir}/debug.keystore")
-            if (custom.exists()) { // using Android's built-in debug signing (no keystore file needed) }
+            if (custom.exists()) { signingConfig = signingConfigs.getByName("debugConfig") }
         }
   }
   compileOptions {
